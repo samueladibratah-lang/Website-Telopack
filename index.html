@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telopack - Wrap Better, Live Greener</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f5; /* Off-white / Cream lembut */
+            color: #3e2723; /* Dark brown text */
+        }
+        /* Custom Colors based on Telo/Nature theme */
+        .color-primary { background-color: #558b2f; } /* Dark Green (Nature) */
+        .color-secondary { background-color: #8d6e63; } /* Brown (Telo/Root) */
+        .text-primary { color: #558b2f; }
+        .text-secondary { color: #8d6e63; }
+        .border-primary { border-color: #558b2f; }
+
+        /* Custom Hover Effect for Buttons */
+        .btn-primary:hover {
+            background-color: #689f38;
+            box-shadow: 0 4px 10px rgba(85, 139, 47, 0.4);
+        }
+        .section-padding { padding: 4rem 1rem; }
+        @media (min-width: 768px) {
+            .section-padding { padding: 6rem 4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-3xl font-extrabold text-[#558b2f]">
+                Telo<span class="text-[#8d6e63]">pack</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#solusi" class="text-gray-600 hover:text-[#558b2f] font-medium transition duration-300">Solusi</a>
+                <a href="#keunggulan" class="text-gray-600 hover:text-[#558b2f] font-medium transition duration-300">Keunggulan</a>
+                <a href="#proses" class="text-gray-600 hover:text-[#558b2f] font-medium transition duration-300">Siklus</a>
+                <a href="#pesan" class="text-gray-600 hover:text-[#558b2f] font-medium transition duration-300">Pemesanan</a>
+            </div>
+            <a href="#pesan" class="hidden md:block color-primary text-white font-semibold py-2 px-5 rounded-full shadow-lg btn-primary transition duration-300">
+                Pesan Sekarang
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="color-primary text-white section-padding pt-20 pb-16">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+                    Telo<span class="text-[#fffbe7]">pack</span>
+                </h1>
+                <p class="text-3xl font-semibold italic mb-6">
+                    Wrap Better, Live Greener
+                </p>
+                <p class="text-xl mb-8 opacity-90">
+                    Pembungkus makanan (cling wrap) revolusioner yang 100% *biodegradable*, dibuat dari pati **limbah kulit singkong** lokal. Solusi aman, higienis, dan tanpa residu plastik.
+                </p>
+                <a href="#pesan" class="bg-[#ffca28] text-[#3e2723] font-bold py-3 px-8 rounded-full text-lg shadow-xl hover:bg-[#ffe082] transition duration-300 transform hover:scale-105">
+                    Hubungi Kami untuk Kemitraan B2G/B2B
+                </a>
+            </div>
+            <div class="md:w-5/12">
+                <!-- Placeholder Image - Representasi Produk Telopack -->
+                <img src="https://placehold.co/500x350/fffbe7/558b2f?text=Telo+Pack\n100%25+Biodegradable" alt="Tampilan Roll Telopack" class="rounded-2xl shadow-2xl border-4 border-white">
+            </div>
+        </div>
+    </section>
+
+    <!-- Solusi Section -->
+    <section id="solusi" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-[#3e2723]">Mengapa Telopack? Mengatasi 2 Krisis</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Krisis 1: Sampah -->
+                <div class="p-8 rounded-xl shadow-lg border-t-4 border-[#558b2f]">
+                    <i class="fa-solid fa-trash-can-arrow-up text-5xl text-primary mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-[#3e2723]">Tantangan Lingkungan</h3>
+                    <p class="text-gray-600">Mengurangi jutaan ton sampah plastik sekali pakai yang mencemari lautan dan TPA. Telopack terurai sempurna dalam hitungan hari.</p>
+                </div>
+                <!-- Krisis 2: Keamanan Pangan -->
+                <div class="p-8 rounded-xl shadow-lg border-t-4 border-[#8d6e63]">
+                    <i class="fa-solid fa-virus-covid text-5xl text-secondary mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-[#3e2723]">Ancaman Mikroplastik</h3>
+                    <p class="text-gray-600">Mencegah migrasi zat kimia berbahaya (BPA, Phthalates) dari plastik murah ke makanan, terutama saat kontak dengan panas. Kami non-toksik.</p>
+                </div>
+                <!-- Solusi: Circular Economy -->
+                <div class="p-8 rounded-xl shadow-lg border-t-4 border-[#558b2f]">
+                    <i class="fa-solid fa-leaf text-5xl text-primary mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-[#3e2723]">Sirkular Ekonomi Lokal</h3>
+                    <p class="text-gray-600">Mengubah limbah kulit singkong, yang merupakan masalah bagi petani, menjadi produk bernilai tinggi. Kesejahteraan petani dan lingkungan terjamin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Section -->
+    <section id="keunggulan" class="section-padding bg-[#fffbe7]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-[#3e2723] text-center">Keunggulan Telopack</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md transform hover:scale-105 transition duration-300">
+                    <div class="color-primary w-16 h-16 flex items-center justify-center rounded-full mb-4 shadow-xl">
+                        <i class="fa-solid fa-seedling text-3xl text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2 text-[#3e2723]">100% Biodegradable</h4>
+                    <p class="text-center text-sm text-gray-600">Terurai menjadi pupuk kompos dalam 30-90 hari, tidak meninggalkan jejak.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md transform hover:scale-105 transition duration-300">
+                    <div class="color-secondary w-16 h-16 flex items-center justify-center rounded-full mb-4 shadow-xl">
+                        <i class="fa-solid fa-utensils text-3xl text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2 text-[#3e2723]">Food Grade A & Edible</h4>
+                    <p class="text-center text-sm text-gray-600">Sangat aman untuk makanan. Bebas BPA dan non-toksik, bahkan aman jika tertelan.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md transform hover:scale-105 transition duration-300">
+                    <div class="color-primary w-16 h-16 flex items-center justify-center rounded-full mb-4 shadow-xl">
+                        <i class="fa-solid fa-tags text-3xl text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2 text-[#3e2723]">Ekonomis & Lokal</h4>
+                    <p class="text-center text-sm text-gray-600">Harga kompetitif. Mendukung rantai pasok lokal dan menekan biaya bahan baku limbah.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md transform hover:scale-105 transition duration-300">
+                    <div class="color-secondary w-16 h-16 flex items-center justify-center rounded-full mb-4 shadow-xl">
+                        <i class="fa-solid fa-handshake text-3xl text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2 text-[#3e2723]">Mitra Strategis MBG</h4>
+                    <p class="text-center text-sm text-gray-600">Ideal untuk program distribusi makanan massal yang membutuhkan higienitas tanpa residu sampah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proses / Siklus Section -->
+    <section id="proses" class="section-padding">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-[#3e2723] text-center">Siklus Hidup Telopack: Kembali ke Bumi</h2>
+            <div class="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0 md:space-x-12">
+                
+                <!-- Step 1 -->
+                <div class="flex-1 text-center bg-white p-6 rounded-xl shadow-lg border-b-4 border-primary">
+                    <i class="fa-solid fa-circle-1 text-3xl text-primary mb-3"></i>
+                    <h3 class="font-semibold text-lg text-[#3e2723]">Inovasi Limbah</h3>
+                    <p class="text-sm text-gray-600">Ekstraksi pati dari kulit singkong yang biasanya terbuang.</p>
+                </div>
+                <!-- Arrow -->
+                <i class="fa-solid fa-arrow-right-long hidden md:block text-4xl text-secondary mt-12"></i>
+                <!-- Step 2 -->
+                <div class="flex-1 text-center bg-white p-6 rounded-xl shadow-lg border-b-4 border-secondary">
+                    <i class="fa-solid fa-circle-2 text-3xl text-secondary mb-3"></i>
+                    <h3 class="font-semibold text-lg text-[#3e2723]">Penggunaan</h3>
+                    <p class="text-sm text-gray-600">Membungkus makanan, menjamin higienitas, bahkan aman kontak dengan suhu tinggi.</p>
+                </div>
+                 <!-- Arrow -->
+                <i class="fa-solid fa-arrow-right-long hidden md:block text-4xl text-secondary mt-12"></i>
+                <!-- Step 3 -->
+                <div class="flex-1 text-center bg-white p-6 rounded-xl shadow-lg border-b-4 border-primary">
+                    <i class="fa-solid fa-circle-3 text-3xl text-primary mb-3"></i>
+                    <h3 class="font-semibold text-lg text-[#3e2723]">Dekomposisi</h3>
+                    <p class="text-sm text-gray-600">Dibuang, Telopack diurai oleh mikroba tanah dalam waktu kurang dari 3 bulan.</p>
+                </div>
+                 <!-- Arrow -->
+                <i class="fa-solid fa-arrow-right-long hidden md:block text-4xl text-secondary mt-12"></i>
+                <!-- Step 4 -->
+                <div class="flex-1 text-center bg-white p-6 rounded-xl shadow-lg border-b-4 border-secondary">
+                    <i class="fa-solid fa-circle-4 text-3xl text-secondary mb-3"></i>
+                    <h3 class="font-semibold text-lg text-[#3e2723]">Regenerasi</h3>
+                    <p class="text-sm text-gray-600">Menjadi pupuk organik, berkontribusi pada kesuburan tanah. Siklus tuntas.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Pemesanan Section -->
+    <section id="pesan" class="section-padding color-secondary text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Siap Menjadi Mitra Ramah Lingkungan?</h2>
+            <p class="text-xl mb-10 opacity-90">Telopack melayani pemesanan dengan volume besar (B2G/B2B) untuk katering, hotel, dan program pemerintah.</p>
+            
+            <div class="bg-white p-8 rounded-xl shadow-2xl text-[#3e2723]">
+                <h3 class="text-3xl font-bold text-primary mb-6">Hubungi Tim Penjualan Kami</h3>
+                <form id="contactForm" class="space-y-4">
+                    <input type="text" id="nama" placeholder="Nama Perusahaan/Instansi" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                    <input type="email" id="email" placeholder="Email Kontak Utama" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                    <select id="kebutuhan" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary">
+                        <option value="">Pilih Jenis Kebutuhan (Volume)</option>
+                        <option value="b2g">Kemitraan B2G (Program Pemerintah)</option>
+                        <option value="b2b_katering">B2B Katering/Restoran</option>
+                        <option value="b2b_hotel">B2B Hotel/Hospitalitas</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                    <textarea id="pesan" rows="4" placeholder="Estimasi Volume Kebutuhan (Cth: 1 Juta Unit/Bulan)" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary"></textarea>
+                    <button type="submit" class="color-primary text-white font-bold py-3 px-8 rounded-full text-lg w-full shadow-lg btn-primary transition duration-300">
+                        Kirim Permintaan Kemitraan
+                    </button>
+                </form>
+                <div id="messageBox" class="mt-4 p-3 rounded-lg text-center font-semibold hidden"></div>
+
+                <p class="mt-6 text-sm text-gray-500">
+                    <i class="fa-solid fa-phone text-secondary"></i> **Telepon:** +62 812-3456-7890 | 
+                    <i class="fa-solid fa-envelope text-secondary"></i> **Email:** hello@telopack.id
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#3e2723] text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <a href="#" class="mx-3 hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="mx-3 hover:text-primary"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="mx-3 hover:text-primary"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="text-sm">&copy; 2025 PT Eco Nusa Surya. Telopack | Wrap Better, Live Greener.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const messageBox = document.getElementById('messageBox');
+            
+            // Simulasi pengiriman data
+            const nama = document.getElementById('nama').value;
+            const kebutuhan = document.getElementById('kebutuhan').value;
+
+            if (nama && kebutuhan) {
+                messageBox.textContent = `Terima kasih ${nama}! Permintaan Anda (${kebutuhan}) telah kami terima. Tim penjualan Telopack akan segera menghubungi Anda.`;
+                messageBox.className = 'mt-4 p-3 rounded-lg text-center font-semibold bg-green-100 text-green-700';
+                messageBox.style.display = 'block';
+                // Reset form setelah 3 detik
+                setTimeout(() => {
+                    document.getElementById('contactForm').reset();
+                    messageBox.style.display = 'none';
+                }, 3000);
+            } else {
+                messageBox.textContent = 'Mohon lengkapi semua bidang yang wajib diisi.';
+                messageBox.className = 'mt-4 p-3 rounded-lg text-center font-semibold bg-red-100 text-red-700';
+                messageBox.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
